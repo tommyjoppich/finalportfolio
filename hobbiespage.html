@@ -4,45 +4,117 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/smiley.jpg" />
-    <link rel="stylesheet" type="text/css" href="css/style_home.css">
-    <script src="js/script.js"></script>
-    <title>Joppich Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style_hobby.css">
+    <title>Tommy's Portfolio</title>
   </head>
   <body>
     <a class = "skip" href="#main"> Skip to Main Content</a>
     <header>
       <nav>
           <ul>
-            <li><a href="homepage.html" class="active">Home</a></li>
-            <li><a href="hobbiespage.html">Hobbies</a></li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="hobbiespage.html" class="active">Hobbies</a></li>
             <li><a href="musicpage.html">Music</a></li>
           </ul>
         </nav>
     </header>
-    <main class="header" id = "main">
-      <div class = overview>
-        <button onclick="sayWelcome()">Welcome!</button>
-      </div>
-      
-      <div class="about-text-block">
-        <h2>Learn More!</h2>
-        <p>Thanks for stopping by my website! There's much to learn on the Hobbies and Music pages, so please explore!</p>
+    <div class = "overview">
+      <h1>My Hobbies!</h1>
+    </div>
+    <main class="image_class_hobby" id = "main">
+      <div class="hobby_image" id="spikeball">
+        <img src="images/spikeball.jpg" alt="spikeball being played"/>
       </div>
 
-      <div class="method-text-block">
-        <h2>Explore the Home Page</h2>
-        <p>I've included some JavaScript tricks into my Homepage, feel free to explore and find some Easter Eggs!</p>
+      <div class="spikeball text-block">
+        <h2>Spikeball</h2>
+        <p>I've been playing Spikeball for almost six years, and joined the competitive team right when I got to Michigan. I feel like in such a big university, it brings me a smaller sense of community, which I now even have a leadership position in!</p>
       </div>
 
-      <div class="dog-image" id="dog">
-        <img src="images/dog.jpg" alt="Tommy holding his dog on their back porch"/>
+      <div class="hobby_image" id="baseball">
+        <img src="images/baseball.jpg" alt="baseball being played"/>
       </div>
 
+      <div class="baseball text-block">
+        <h2>Baseball</h2>
+        <p>As a four year old, I did not realize how much passion I would find for baseball. However, I ended up playing all the way through high school and gaining many life leadership skills from it.</p>
+      </div>
+
+      <div class="hobby_image" id="basketball">
+        <img src="images/basketball.jpeg" alt="basketball being played"/>
+      </div>
+
+      <div class="basketball text-block">
+        <h2>Basketball</h2>
+        <p>While I found basketball later than a lot of people I played with, I still very much enjoyed the hustle. I find that it is one of my favorite games to play with friends in college.</p>
+      </div>
+
+      <div class="hobby_image" id="sleep">
+        <img src="images/sleep.jpg" alt ="someone fast asleep"/>
+      </div>
+
+      <div class="sleep text-block">
+        <h2>Sleep</h2>
+        <p>As ironic as it sounds to say, sleep gives me such a boost and motivation to shape my days. Throughout 2023, I have been setting goals to ensure I get 56 hours of sleep every week!</p>
+      </div>
+
+      <div class="hobby_image" id="geoguessr">
+        <img src="images/geoguessr.jpg" alt ="geoguessr home page"/>
+      </div>
+
+      <div class="geoguessr text-block">
+        <h2>Geoguessr</h2>
+        <p>Despite how niche of a hobby it is, I have come to really love the game of Geoguessr. I feel like I have learned so much about the world and how much I want to explore and travel when I am older.</p>
+      </div>
+
+      <div class="hobby_image" id="chess">
+        <img src="images/chess.jpg" alt ="fake chess game playing"/>
+      </div>
+
+      <div class="chess text-block">
+        <h2>Chess</h2>
+        <p>During the height of Covid, I watched a lot of people play chess online, and decided I really wanted to learn. While I'm still not the best, I enjoy the mental battle that comes from the game.</p>
+      </div>
+
+      <div class="hobby_image" id="weights">
+        <img src="images/weights.jpg" alt ="someone lifting weights"/>
+      </div>
+
+      <div class="weights text-block">
+        <h2>Lifting Weights</h2>
+        <p>Like sleep, going to the gym is something I really like planning my days around. I really feel like I can see physical and mental progress, especially on days where I lack motivation.</p>
+      </div>
+
+      <div class="hobby_image" id="volleyball">
+        <img src="images/volleyball.jpg" alt ="someone playing volleyball"/>
+      </div>
+
+      <div class="volleyball text-block">
+        <h2>Volleyball</h2>
+        <p>Vacations, retreats, intermurals, and university clubs are among the places I have learned the game of volleyball and really started to enjoy it. One day my jump serve will be perfect!</p>
+      </div>
+
+      <div class="hobby_image" id="magic">
+        <img src="images/magic.jpg" alt ="magician throwing cards"/>
+      </div>
+
+      <div class="magic text-block">
+        <h2>Card Magic</h2>
+        <p>Also during the height of Covid, I dove into the world of magic and really liked the spontenaity of card magic. I still have my main trick mastered and love to perform it anytime!</p>
+      </div>
+
+      <div class="hobby_image" id="chef">
+        <img src="images/chef.jpg" alt ="person cutting up vegetables"/>
+      </div>
+
+      <div class="chef text-block">
+        <h2>Cooking</h2>
+        <p>While it's not my strongest skill, I enjoy cooking the meals I have mastered. I have become known among my friends for my specialty - chocolate chip pancakes.</p>
+      </div>
   </main>
   <div class="footer">
     <div class="container">
-      <div class="logo"><p id="tommyText">Tommy's Portfolio</p></div>
-      <img id="myImage" src="https://www.example.com/image.jpg" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <div class="logo"><a href="#">Tommy's Portfolio</a></div>
       <ul class="social">
         <li><a href="https://www.instagram.com/tommyjoppich/" target="_blank"> <img src="images/insta.png" alt="instagram logo"/></a></li>
         <li><a href="https://github.com/tommyjoppich" target="_blank"> <img src="images/github.png" alt="github logo"/></a></li>
