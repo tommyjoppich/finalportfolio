@@ -43,25 +43,25 @@ a.skip:focus{
 }
 
 nav {
-  background-color: #333; /* Set the background color of the navigation bar */
+  background-color: #333; 
 }
 nav ul {
-  list-style-type: none; /* Remove the bullet points from the list */
+  list-style-type: none; 
   margin: 0;
   padding: 0;
 }
 nav ul li {
-  display: inline-block; /* Display the list items inline */
+  display: inline-block; 
 }
 nav ul li a {
-  display: block; /* Make the links full width */
+  display: block; 
   color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 nav ul li a:hover{
-  background-color: #c806ee; /* Change the background color on hover */
+  background-color: #c806ee; 
 }
 nav ul li a.active{
   font-weight: bold;
@@ -148,7 +148,6 @@ nav ul li a.active{
 }
 
 @media screen and (min-width: 950px) {
-  /* Styles to apply when the screen size is larger than 750 pixels */
   .image_class_hobby {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
