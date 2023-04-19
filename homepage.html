@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/logo-drk.png" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/smiley.jpg" />
+    <link rel="stylesheet" type="text/css" href="css/style_home.css">
+    <script src="js/script.js"></script>
     <title>Joppich Portfolio</title>
   </head>
   <body>
-    <div class="skip"><a href="">Skip to Main Content</a></div>
+    <a class = "skip" href="#main"> Skip to Main Content</a>
     <header>
       <nav>
           <ul>
-            <li><a href="homepage.html">Home</a></li>
+            <li><a href="homepage.html" class="active">Home</a></li>
             <li><a href="hobbiespage.html">Hobbies</a></li>
             <li><a href="musicpage.html">Music</a></li>
           </ul>
@@ -20,48 +21,34 @@
     </header>
     <main class="header" id = "main">
       <div class = overview>
-        <h1>Home Page</h1>
-        <p>Home Page about Tommy.</p>
-      </div>
-
-      <div class="image_class" id="about">
-        <img src="images/about.jpg" alt=""/>
+        <button onclick="sayWelcome()">Welcome!</button>
       </div>
       
-      <div class="about text-block">
-        <h2>empty</h2>
-        <p>nothing yet.</p>
+      <div class="about-text-block">
+        <h2>Learn More!</h2>
+        <p>Thanks for stopping by my website! There's much to learn on the Hobbies and Music pages, so please explore!</p>
       </div>
 
-      <div class="image_class" id="method">
-        <img src="images/method.jpg" alt=""/>
+      <div class="method-text-block">
+        <h2>Explore the Home Page</h2>
+        <p>I've included some JavaScript tricks into my Homepage, feel free to explore and find some Easter Eggs!</p>
       </div>
 
-      <div class="method text-block">
-        <h2>empty</h2>
-        <p>nothing yet.</p>
+      <div class="dog-image" id="dog">
+        <img src="images/dog.jpg" alt="Tommy holding his dog on their back porch"/>
       </div>
 
-      <div class="image_class" id="clients">
-        <img src="images/clients.jpg" alt=""/>
-      </div>
-
-      <div class="clients text-block">
-        <h2>empty</h2>
-        <p>nothing yet.</p>
-      </div>
-
-      <div class="image_class" id="contact">
-        <img src="images/contact.jpg" alt =""/>
-      </div>
-
-      <div class="contact text-block">
-        <h2>empty</h2>
-        <p>nothing yet.</p>
-      </div>
   </main>
-    <footer>
-      <p>Tommy Joppich Portfolio</p>
-    </footer>
+  <div class="footer">
+    <div class="container">
+      <div class="logo"><p id="tommyText">Tommy's Portfolio</p></div>
+      <img id="myImage" src="https://www.example.com/image.jpg" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <ul class="social">
+        <li><a href="https://www.instagram.com/tommyjoppich/" target="_blank"> <img src="images/insta.png" alt="instagram logo"/></a></li>
+        <li><a href="https://github.com/tommyjoppich" target="_blank"> <img src="images/github.png" alt="github logo"/></a></li>
+        <li><a href="https://www.linkedin.com/in/thomas-joppich-a66845251/" target="_blank"> <img src="images/linkedin.png" alt="linkedin logo"/></a></li>
+      </ul>
+    </div>
+  </div>
   </body>
 </html>
