@@ -3,10 +3,163 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 65px;
+    color: white;
 }
 .image_class_music img {
     width: 100%;
-    height: 100px;
+    height: 200px;
     object-fit: cover;
+}
+.overview h1{
+    color: #0077ff;
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+a.skip:focus{
+   top:20px;
+   color: black;
+   text-decoration-style: solid;
+}
+
+nav {
+    background-color: #333; /* Set the background color of the navigation bar */
+}
+nav ul {
+    list-style-type: none; /* Remove the bullet points from the list */
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block; /* Display the list items inline */
+}
+nav ul li a {
+    display: block; /* Make the links full width */
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #c806ee; /* Change the background color on hover */
+}
+nav ul li a.active{
+    background-color: #324bc7;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo {
+    font-size: 1.4em;
+}
+  
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+  
+.social li {
+    margin: 0 5px;
+}
+  
+.social a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    color: #333;
+    font-size: 1em;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+  
+.social img{
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (min-width: 750px){
+    .image_class_hobby {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+      
+    .image_class_hobby img {
+        width: 30%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+      
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 950px) {
+  /* Styles to apply when the screen size is larger than 950 pixels */
+  .image_class_hobby {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+    color: white;
+  }
+  
+  .image_class_hobby img {
+    width: 30%;
+    height: auto;
+    margin: 20px;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Add more styles as needed */
 }
