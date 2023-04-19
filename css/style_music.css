@@ -1,22 +1,35 @@
-.image_class_music {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 65px;
-    color: white;
-}
-.image_class_music img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.overview h1{
-    color: #0077ff;
-    text-align: center;
-}
 body{
     background-color: black;
+    font-family: 'Verdana';
+}
+main{
+    color: white;
+}
+nav {
+    background-color: #333;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: block; 
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #c806ee;
+}
+nav ul li a.active{
+    font-weight: bold;
+    border: black dashed 3px;
+    background-color: #003d84;
 }
 
 a.skip{
@@ -35,33 +48,6 @@ a.skip:focus{
    text-decoration-style: solid;
 }
 
-nav {
-    background-color: #333; /* Set the background color of the navigation bar */
-}
-nav ul {
-    list-style-type: none; /* Remove the bullet points from the list */
-    margin: 0;
-    padding: 0;
-}
-nav ul li {
-    display: inline-block; /* Display the list items inline */
-}
-nav ul li a {
-    display: block; /* Make the links full width */
-    color: #fff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-nav ul li a:hover{
-    background-color: #c806ee; /* Change the background color on hover */
-}
-nav ul li a.active{
-    font-weight: bold;
-    border: black dashed 3px;
-    background-color: #003d84;
-}
-
 .footer {
     background-color: #333;
     color: #fff;
@@ -78,6 +64,27 @@ nav ul li a.active{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.dog-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dog-image img{
+    height: 400px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.method-text-block h2, .method-text-block p, .about-text-block h2, .about-text-block p{
+    text-align: center;
+}
+
+.method-text-block h2, .about-text-block h2{
+    color: #0077ff;
 }
   
 .logo {
@@ -118,48 +125,40 @@ nav ul li a.active{
     width: 30px;
 }
 
+button {
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: #0077ff;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 750px){
-    .image_class_hobby {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
+    .about-text-block h2, .about-text-block p{
+        text-align: right;
     }
-      
-    .image_class_hobby img {
-        width: 30%;
-        height: auto;
-        margin-bottom: 20px;
+
+    .method-text-block h2, .method-text-block p{
+        text-align: left;
     }
-      
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+
+    .method-text-block h2, .about-text-block h2{
+        color: #0077ff;
     }
 }
 
 @media screen and (min-width: 950px) {
-  /* Styles to apply when the screen size is larger than 950 pixels */
-  .image_class_hobby {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 65px;
-    color: white;
-  }
-  
-  .image_class_hobby img {
-    width: 30%;
-    height: auto;
-    margin: 20px;
-  }
+    .method-text-block h2, .method-text-block p{
+        text-align: right;
+    }
+    .about-text-block h2, .about-text-block p{
+        text-align: left;
+    }
 
-  img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    .method-text-block h2, .about-text-block h2{
+        color: #0077ff;
+    }
 }
