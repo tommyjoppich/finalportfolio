@@ -152,6 +152,9 @@ button {
     .method-text-block h2, .method-text-block p{
         text-align: right;
     }
+    .about-text-block h2, .about-text-block p{
+        text-align: left;
+    }
 
     .method-text-block h2, .about-text-block h2{
         color: #0077ff;
